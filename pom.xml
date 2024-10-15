@@ -38,18 +38,6 @@
     <influxdb-client-java.version>7.1.0</influxdb-client-java.version>
     <flux-dsl.version>7.1.0</flux-dsl.version>
     <org.eclipse.paho.client.mqttv3.version>1.2.5</org.eclipse.paho.client.mqttv3.version>
-
-    <!--
-    <bson.version>4.6.1</bson.version>
-    <commons-codec.version>1.15</commons-codec.version>
-    <compiler-plugin.version>3.10.1</compiler-plugin.version>
-    <org.projectlombok.version>1.18.34</org.projectlombok.version>
-    <instancio-junit>2.16.1</instancio-junit>
-    <surefire-plugin.version>3.0.0-M7</surefire-plugin.version>
-
-
-    <httpclient5-fluent.version>5.1.4</httpclient5-fluent.version>
-    -->
   </properties>
 
   <dependencyManagement>
