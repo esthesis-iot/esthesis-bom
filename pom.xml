@@ -39,11 +39,26 @@
     <flux-dsl.version>7.1.0</flux-dsl.version>
     <org.eclipse.paho.client.mqttv3.version>1.2.5</org.eclipse.paho.client.mqttv3.version>
     <testcontainers.version>1.20.0</testcontainers.version>
+    <resilience4j-ratelimiter.version>2.1.0</resilience4j-ratelimiter.version>
   </properties>
 
   <dependencyManagement>
     <dependencies>
       <!-- DEV & BUILD -->
+      <dependency>
+        <groupId>io.quarkus.platform</groupId>
+        <artifactId>quarkus-bom</artifactId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>io.quarkus.platform</groupId>
+        <artifactId>quarkus-camel-bom</artifactId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>${quarkus.platform.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.semver4j</groupId>
         <artifactId>semver4j</artifactId>
@@ -63,20 +78,6 @@
         <groupId>com.github.slugify</groupId>
         <artifactId>slugify</artifactId>
         <version>${slugify.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-bom</artifactId>
-        <scope>import</scope>
-        <type>pom</type>
-        <version>${quarkus.platform.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>io.quarkus.platform</groupId>
-        <artifactId>quarkus-camel-bom</artifactId>
-        <scope>import</scope>
-        <type>pom</type>
-        <version>${quarkus.platform.version}</version>
       </dependency>
       <dependency>
         <artifactId>lombok</artifactId>
@@ -128,6 +129,11 @@
         <artifactId>hivemq</artifactId>
         <version>${testcontainers.version}</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>io.github.resilience4j</groupId>
+        <artifactId>resilience4j-ratelimiter</artifactId>
+        <version>${resilience4j-ratelimiter.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
