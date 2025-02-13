@@ -6,7 +6,7 @@
 
   <groupId>esthesis</groupId>
   <artifactId>esthesis-bom</artifactId>
-  <version>1.0.25-SNAPSHOT</version>
+  <version>1.0.25</version>
   <packaging>pom</packaging>
 
   <properties>
