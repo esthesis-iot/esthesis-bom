@@ -24,7 +24,7 @@
     <skipITs>true</skipITs>
 
     <!-- QUARKUS -->
-    <quarkus.platform.version>3.11.1</quarkus.platform.version>
+    <quarkus.platform.version>3.21.1</quarkus.platform.version>
 
     <!-- THIRD-PARTY -->
     <org.projectlombok.version>1.18.34</org.projectlombok.version>
