@@ -25,6 +25,7 @@
 
     <!-- QUARKUS -->
     <quarkus.platform.version>3.21.1</quarkus.platform.version>
+    <quarkus-langchain4j.version>0.26.1</quarkus-langchain4j.version>
 
     <!-- THIRD-PARTY -->
     <org.projectlombok.version>1.18.34</org.projectlombok.version>
@@ -48,17 +49,24 @@
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
         <scope>import</scope>
         <type>pom</type>
-        <version>${quarkus.platform.version}</version>
       </dependency>
       <dependency>
         <groupId>io.quarkus.platform</groupId>
         <artifactId>quarkus-camel-bom</artifactId>
+        <version>${quarkus.platform.version}</version>
         <scope>import</scope>
         <type>pom</type>
-        <version>${quarkus.platform.version}</version>
       </dependency>
+<!--      <dependency>-->
+<!--        <groupId>io.quarkiverse.langchain4j</groupId>-->
+<!--        <artifactId>quarkus-langchain4j-bom</artifactId>-->
+<!--        <version>${quarkus-langchain4j.version}</version>-->
+<!--        <scope>import</scope>-->
+<!--        <type>pom</type>-->
+<!--      </dependency>-->
       <dependency>
         <groupId>org.semver4j</groupId>
         <artifactId>semver4j</artifactId>
